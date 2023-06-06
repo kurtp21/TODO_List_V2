@@ -9,11 +9,10 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 0.6rem;
-    background-color: antiquewhite;
-    transition: 0.8s;
+    background-color: beige;
 }
 
-#container {
+.container {
     height: 100%;
     max-width: 33.75rem;
     border-radius: 1rem;
@@ -27,7 +26,6 @@ body {
     align-items: center;
     margin-bottom: 0.6rem;
     font-size: 2.5rem;
-    color: black;
 }
 
 #header img {
@@ -52,7 +50,7 @@ body {
 .input #input-box {
     flex: 1 1 0%;
     background-color: whitesmoke;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     padding: 0.8rem;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
@@ -61,7 +59,7 @@ body {
 .input button { 
     font-size: 1rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, lightsteelblue, blue);
+    background-image: linear-gradient(to right, lightblue, blue);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
@@ -107,25 +105,9 @@ ul li.checked::before {
 #new-list {
     display: flex;
     justify-content: center;
-    border-radius: 0.5rem;
-    margin-top: 1.25rem;
-    margin-bottom: 0.5rem; 
-}
-
-#new-list button{
-    color: pink;
+    background: lightcoral;
     padding: 0.5rem;
-    width: 50%;
-    height: auto;
-    font-size: 1rem;
-    font-weight: 700;
-    background-image: linear-gradient(to right, lightcoral, red);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: 0.8s;
-    display: none;
-}
+    font-size: 3.125rem;
+    font-weight: 800;
 
-#new-list button:hover, #new-list button:active {
-    opacity: 0.8;
 }

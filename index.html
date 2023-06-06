@@ -6,11 +6,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Open+Sans&family=Oswald:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <title>TODO-List V.2</title>
     </head>
-    
+
     <body>
-        
+        <div id="container">
+            <div id="header">
+                <h1>My TODO List <img src="list.jpeg" alt="img"></h1>
+                <div class="input">
+                    <input type="text" id="input-box" placeholder="What is your task?">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+            </div>
+
+            <div id="tasks">
+                <ul id="task">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </div>
+
+            <div id="new-list">
+                <button>New List</button>
+            </div>
+        </div>        
 
         <script src="script.js"></script>
     </body>
