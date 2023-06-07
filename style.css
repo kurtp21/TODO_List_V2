@@ -1,3 +1,4 @@
+/* The default styles for the whole document */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* Styling the background of the app */
 body {
     width: 100%;
     min-height: 100vh;
@@ -13,6 +15,7 @@ body {
     transition: 0.8s;
 }
 
+/* Styling the TODO List app */
 #container {
     height: 100%;
     max-width: 33.75rem;
@@ -22,20 +25,22 @@ body {
     padding: 1.25rem 1.875rem 1.25rem;
 }
 
+/* Styling the title and the title img */
 #header h1 {
     display: flex;
     align-items: center;
     margin-bottom: 0.6rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
 }
 
 #header img {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin-left: 1rem;
 }
 
+/* Styling the text-input box */
 .input {
     display: flex;
     align-items: center;
@@ -58,6 +63,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Styling the text-input button */
 .input button { 
     font-size: 1rem;
     font-weight: 700;
@@ -69,10 +75,12 @@ body {
     transition: 0.4s;
 }
 
+/* Adding an effect to the text-input button */
 .input button:hover, .input button:active {
     opacity: 0.8;
 }
 
+/* Styling the tasks  */
 ul li { 
     list-style: none;
     font-size: 1rem;
@@ -82,6 +90,7 @@ ul li {
     position: relative;
 }
 
+/* Adding an unchecked and checked img for the tasks */
 ul li::before {
     content: '';
     position: absolute;
@@ -104,6 +113,25 @@ ul li.checked::before {
     background-image: url(images/checkbox-checked.svg);
 }
 
+/* Styling the delete option for the tasks */
+ul li span {
+    position: absolute;
+    padding: 0.25rem;
+    right: 0;
+    top: 0.1rem;  
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.375rem;
+    color: lightslategray;
+    text-align: center;
+    border-radius: 25%;
+}
+
+ul li span:hover {
+    background: lightgray;
+}
+
+/* Styling the new-list button and adding an effect to it */
 #new-list {
     display: flex;
     justify-content: center;
