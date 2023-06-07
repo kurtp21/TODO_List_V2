@@ -112,7 +112,7 @@ ul li.checked::before {
     margin-bottom: 0.5rem; 
 }
 
-#new-list button{
+#new-list #new-button{
     color: pink;
     padding: 0.5rem;
     width: 50%;
@@ -126,6 +126,6 @@ ul li.checked::before {
     display: none;
 }
 
-#new-list button:hover, #new-list button:active {
+#new-list #new-button:hover, #new-list #new-button:active {
     opacity: 0.8;
 }
